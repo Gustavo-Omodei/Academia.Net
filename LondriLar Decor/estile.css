@@ -1,0 +1,216 @@
+html{
+    height: 100%;
+    min-height: 100%;
+}
+#teste{
+    position: relative;
+    min-height: 100vh;
+}
+#conteudo{
+    padding-bottom: 2.5rem;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #484848;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: rgb(21, 20, 20);
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 1px;
+    overflow: hidden;
+    text-align: center;
+    
+}
+nav ul li{
+    display: inline;
+}
+
+li{
+    margin-right: 50px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    color: gold;
+}
+section{
+    padding: 20px;
+    display: flex;
+}
+
+footer{
+    height: 2.5rem;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(21, 20, 20);
+}
+footer p{
+    text-align: center;
+    color: white;
+}
+
+
+.textoInicial{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}      
+
+
+.textoInicial img{
+    height: 500px;
+    width: 500px;
+}
+
+.contatos {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.contatos li{
+    list-style-type: none;
+    text-align: left;
+    margin-left: 5px;
+}
+.contatos li input{
+    border-radius: 10px;
+}
+.contatos li textarea{
+    border-radius: 10px;
+}
+.contatos li button{
+    border-radius: 5px;
+}
+.contatos li button a{
+    text-decoration: none;
+    color: black;
+}
+.contatos img{
+    height: 20px;
+}
+#inputs{
+    margin-left: 40px;
+}
+#inputs input{
+    height: 40px;
+    width: 90px;
+}
+#inputs textarea{
+    height: 100px;
+    width: 300px;
+}
+.mensagem{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+}
+table{
+    margin-top: 1%;
+    width: 100%;
+    background-color: white;
+    border-color: black;
+}
+.guarda_roupa{
+    padding: 10px 10px;
+    background-color: rgb(211, 211, 208);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.guarda_roupa h3{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.guarda_roupa img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(38, 38, 38), 
+            0px 0 ;
+}
+
+.armario{
+    margin-top: 1%;
+    padding: 10px 10px;
+    background-color: rgb(211, 211, 208);
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.armario h3{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.armario img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(38, 38, 38), 
+            0px 0;
+    height: 522px;
+    width: 522px;
+}
+.sofa{
+    margin-top: 1%;
+    padding: 10px 10px;
+    background-color: rgb(211, 211, 208);
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.sofa h3{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.sofa img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(38, 38, 38), 
+            0px 0;
+    height: 522px;
+    width: 600px;
+}
+
+.poltrona{
+    margin-top: 1%;
+    padding: 10px 10px;
+    background-color: rgb(211, 211, 208);
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.poltrona h3{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.poltrona img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(38, 38, 38), 
+            0px 0;
+    height: 522px;
+    width: 600px;
+}
+
+
