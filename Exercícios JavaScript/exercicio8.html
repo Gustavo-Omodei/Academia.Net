@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="mudarFonte('white')">Fonte Branca</button>
+    <button onclick="mudarFonte('black')">Fonte Preta</button>
+    <button onclick="mudarFundo('red')">Fundo Vermelho</button>
+    <button onclick="mudarFundo('yellow')">Fundo Amarelo</button>
+    <button id="aumentarFonte">A+</button>
+    <button id="diminuirFonte">A-</button>
+    <button onclick="conversorMaiusculo()">Maiuscúlo</button>
+    <button onclick="conversorMinusculo()">Minúsculo</button>
+    <p id="teste">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit est libero, id scelerisque nisi consectetur efficitur. Proin dignissim egestas volutpat. Etiam vehicula mauris 
+        quis augue viverra, eget consequat nisi malesuada. Suspendisse viverra eget velit ac</p>
+    
+ <script>
+    function mudarFonte(corFonte){
+        document.getElementById("teste").style.color = corFonte
+
+    }
+    function mudarFundo(corFundo){
+        document.getElementById("teste").style.backgroundColor = corFundo
+        document.getElementById("teste").style.transition = "background-color 1s"
+        
+    }
+
+    var btAumentar = document.getElementById('aumentarFonte');
+    var btDiminuir = document.getElementById('diminuirFonte');
+    var fonte = 100;
+    var variavelAux = 10;
+
+    btAumentar.addEventListener('click', function(event){
+        fonte= fonte + variavelAux;
+        document.body.style.fontSize = fonte + '%';
+    })
+
+    btDiminuir.addEventListener('click',function(event){
+        fonte = fonte - variavelAux;
+        document.body.style.fontSize = fonte + "%"
+    })
+
+    function conversorMaiusculo(){
+        var str = document.getElementById('teste')
+        str.textContent = str.textContent.toUpperCase();
+    }
+
+    function conversorMinusculo(){
+        var str = document.getElementById('teste')
+        str.textContent = str.textContent.toLowerCase();
+    }
+
+ </script>
+</body>
+</html>

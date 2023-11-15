@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="selecaoCor" onchange="mudarCor(this)">
+        <option value="">Escolha uma cor</option>
+        <option value="red">Vermelho</option>
+        <option value="green">Verde</option>
+        <option value="yellow">Amarelo</option>
+        <option value="blue">Azul</option>
+    </select>
+
+    <script>
+        function mudarCor(selecao){
+            var corSelecionada = selecao.options[selecao.selectedIndex].value;
+            document.body.style.backgroundColor = corSelecionada;
+        }
+    </script>
+</body>
+</html>

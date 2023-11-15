@@ -1,0 +1,32 @@
+body{
+    background-color: orange;
+}
+
+.input{
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10% 10%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px orangered;
+
+}
+
+.input form{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    text-align: center;
+
+}
+
+.input input{
+    border:none;
+    background-color: orange;
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: white;
+    outline:0;
+    box-shadow: 5px 5px 10px orange;
+    margin-bottom: 1%;
+}

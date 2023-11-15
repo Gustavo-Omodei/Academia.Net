@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="teste">Conteúdo do texto</p>
+    <button onclick="esconderTexto('teste')">Esconder texto</button>
+
+    <script>
+        function esconderTexto(texto){
+            var display =  document.getElementById(texto).style.display;
+            if(display == "none")
+                document.getElementById(texto).style.display = 'block';
+            else{
+                document.getElementById(texto).style.display = 'none';
+            }
+
+        }
+    </script>
+</body>
+</html>

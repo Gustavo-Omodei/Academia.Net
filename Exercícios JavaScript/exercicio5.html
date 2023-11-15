@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário com Checkboxes</title>
+</head>
+<body>
+
+  <form id="meuFormulario">
+    <label>
+      <input type="checkbox" id="checkbox1" onchange="atualizarBotao()"> Checkbox 1
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" id="checkbox2" onchange="atualizarBotao()"> Checkbox 2
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" id="checkbox3" onchange="atualizarBotao()"> Checkbox 3
+    </label>
+    <br>
+    <button type="button" id="meuBotao" disabled>Enviar</button>
+  </form>
+
+  <script>
+    function atualizarBotao() {
+      var checkbox1 = document.getElementById('checkbox1').checked;
+      var checkbox2 = document.getElementById('checkbox2').checked;
+      var checkbox3 = document.getElementById('checkbox3').checked;
+      var meuBotao = document.getElementById('meuBotao');
+
+      if (checkbox1 + checkbox2 + checkbox3 >= 2) {
+        meuBotao.disabled = false;
+      } else {
+        meuBotao.disabled = true; 
+      }
+    }
+  </script>
+
+</body>
+</html>
