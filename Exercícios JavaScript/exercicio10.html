@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    
+<div class="form">
+<form action="" name="formulario" id="formulario">
+    <ul>
+        <li><label for="nome"> Nome:</label>
+        <input type="text" name="nome" id="nome"></li>
+        <li><input type="radio" name="pessoa" id="pessoaF" value="pessoaF" onchange="controlarVisibilidade1()">Pessoa Física </li>
+        <li><input type="radio" name="pessoa" id="pessoaJ" value="pessoaJ" onchange="controlarVisibilidade2()">Pessoa Jurídica</li>
+        <li><label for="cpf">CPF: </label><input type="text" name="cpf" id="cpf"></li>
+        <li><label for="cnpj">CNPJ: </label><input type="text" name="cnpj" id="cnpj"></li>
+        <li><label for="data-Nascimento">Data de Nascimento </label><input type="date" name="data-Nascimento" id="data-Nascimento"></li>
+        <li><label for="endereco">Endereço: </label><input type="text" name="endereco" id="endereco"></li>
+        <li><label for="cep">CEP: </label><input type="text" name="cep" oninput="verificarNumero()" id="cep"></li>
+        <li><label for="telefone">Telefone: </label><input type="text" name="telefone" id="telefone"></li>
+        <li><label for="email">Email: </label><input type="text" name="email" id="email"></li>
+    </ul>
+</form>
+</div>
+
+<script>
+    function verificarNumero(){
+        var input = formulario.cep;
+        var valor = input.value;
+
+        valor = valor.replace(/[^0-9]/g, '');
+
+        input.value = valor;
+    }
+
+    function controlarVisibilidade() {
+        var radioOpcao1 = document.getElementById("pessoaF");
+        var radioOpcao2 = document.getElementById("pessoaJ");
+        var inputCPF = document.getElementById("cpf");
+        var inputCNPJ = document.getElementById("cnpj");
+        var inputData = document.getElementById("data-Nascimento");
+
+        inputCPF.disabled = !radioOpcao1.checked;
+        inputCNPJ.disabled = !radioOpcao2.checked;
+        inputData.disabled = !radioOpcao1.checked;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var radioOpcao1 = document.getElementById("pessoaF");
+        var radioOpcao2 = document.getElementById("pessoaJ");
+
+        radioOpcao1.addEventListener("change", controlarVisibilidade);
+        radioOpcao2.addEventListener("change", controlarVisibilidade);
+
+        controlarVisibilidade();
+    });
+</script>
+
 </body>
 </html>
